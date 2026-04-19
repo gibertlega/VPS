@@ -1,0 +1,33 @@
+# Secrets
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.env/
+build/
+dist/
+*.egg-info/
+
+# Node/Web
+node_modules/
+dist/
+build/
+.next/
+.svelte-kit/
+
+# System
+.DS_Store
+Thumbs.db
+*.log
+
+# Project Specific
+soft/
+backup/

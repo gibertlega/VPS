@@ -1,0 +1,1 @@
+UPDATE settings SET value = '{"log": {"access": "none", "dnsLog": false, "error": "", "loglevel": "warning"}, "routing": {"domainStrategy": "AsIs", "rules": [{"type": "field", "outboundTag": "direct", "domain": ["regexp:.*\\.ru$", "regexp:.*\\.su$", "regexp:.*\\.xn--p1ai$"]}, {"type": "field", "inboundTag": ["api"], "outboundTag": "api"}]}}' WHERE key = 'xrayTemplateConfig';
