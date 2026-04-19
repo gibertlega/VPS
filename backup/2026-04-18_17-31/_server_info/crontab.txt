@@ -1,0 +1,5 @@
+@reboot /usr/bin/sub2sing-box server --bind 127.0.0.1 --port 8080 > /dev/null 2>&1
+@daily x-ui restart > /dev/null 2>&1 && nginx -s reload;
+@monthly certbot renew --nginx --non-interactive --post-hook "nginx -s reload" > /dev/null 2>&1;
+0 1 * * * /usr/bin/python3 /opt/antigravity/shared/scripts/monitor_vps.py --report
+0 3 * * 1 /usr/local/bin/update_ru_blocklist.sh
